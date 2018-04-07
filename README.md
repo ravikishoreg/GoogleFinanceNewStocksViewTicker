@@ -6,9 +6,7 @@ Save a bookmarklet with below text which will download gf.js file and render a s
 javascript:(function () {
     window.NUM_ROWS = 30;
     window.ENFORCE_ORDER_STR = "NIFTY SBIN GOOGL";
-    var new_script = document.createElement("script"); 
-    new_script.src = "https://rawgit.com/ravikishoreg/GoogleFinanceNewStocksViewTicker/master/gf.js"; 
-    document.body.appendChild(new_script);
+    document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src = 'https://rawgit.com/ravikishoreg/GoogleFinanceNewStocksViewTicker/master/gf.js?' + Math.random();
 })();
 
 You can also configure few properties. Check gf.js "Variables that can be configured in the bookmaklet"
