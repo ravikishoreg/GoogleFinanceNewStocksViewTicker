@@ -8,7 +8,7 @@ var EXPAND_LIST = true; //Automatically expand "Your Stock" by clicking on arrow
 var ENFORCE_ORDER = ENFORCE_ORDER_STR.split(/\s+/);
 function gfInit()
 {
-  console.log("gfInit",$);
+  console.log("gfInit");
   
   //////////////////////////////DOMUTILS - BEGIN/////////////////////////////////////////////
   var DOMUtils = function(){}
