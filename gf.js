@@ -69,7 +69,7 @@ function gfInit()
     numTimes = numTimes || 1;
     console.log("expandAllStockList", numTimes);
     var $next = window.EXPAND_LIST ? $("#knowledge-finance-wholepage__financial-entities-list").siblings([role="button"]) : null;
-    if(numTimes < 50 && $next && $next.length == 1 && $next.css('display') != 'none')
+    if(numTimes < 30 && $next && $next.length == 1 && $next.css('display') != 'none')
     {
       $next.click()
       setTimeout(expandAllStockList, 300, numTimes+1);
