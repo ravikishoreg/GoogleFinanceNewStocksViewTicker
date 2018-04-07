@@ -4,6 +4,8 @@ Need to open new Google Finance "Your Stocks" view. After page loads, click on b
 Save a bookmarklet with below text which will download gf.js file and render a stock ticker 
 
 javascript:(function () {
+    window.NUM_ROWS = 30;
+    window.ENFORCE_ORDER_STR = "NIFTY SBIN GOOGL";
     var new_script = document.createElement("script"); 
     new_script.src = "https://rawgit.com/ravikishoreg/GoogleFinanceNewStocksViewTicker/master/gf.js"; 
     document.body.appendChild(new_script);
