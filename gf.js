@@ -1,13 +1,14 @@
-var ENFORCE_ORDER_STR = ENFORCE_ORDER_STR || "NIFTY SBIN";
-var NUM_ROWS = NUM_ROWS || 30;
-
+//Variables that can be configured in the bookmaklet
+var ENFORCE_ORDER_STR = ENFORCE_ORDER_STR || "NIFTY SBIN";  //These will come at the start
+var NUM_ROWS = NUM_ROWS || 30;          //Number of stocks in a row
 var EXCHANGES_TO_OMIT = ['NSE', 'NASDAQ'];
-var HIDE_BODY = true;
-var EXPAND_LIST = true;
+var HIDE_BODY = true;   
+var EXPAND_LIST = true; //Automatically expand "Your Stock" by clicking on arrow.
+
 var ENFORCE_ORDER = ENFORCE_ORDER_STR.split(/\s+/);
 function gfInit()
 {
-  console.log("gfInit",$);
+  console.log("gfInit");
   
   //////////////////////////////DOMUTILS - BEGIN/////////////////////////////////////////////
   var DOMUtils = function(){}
