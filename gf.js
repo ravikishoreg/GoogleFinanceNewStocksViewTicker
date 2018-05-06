@@ -40,7 +40,7 @@ function gfInit()
 
   if(!window.jQuery)
   {
-    let jq = document.createElement("script");
+    var jq = document.createElement("script");
     jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
     jq.async = false; 
     jq.onload = function() {
